@@ -1,7 +1,6 @@
 package uk.co.mattbailey.adventofcode2025
 
 class Day01 {
-
     fun solvePart1(input: List<String>): Int {
         var numberOfTimesAtZero = 0
         var currentPosition = 50
@@ -19,7 +18,9 @@ class Day01 {
                     currentPosition = 0 + (currentPosition - 100)
                 }
             }
-            if (currentPosition == 0) { numberOfTimesAtZero++ }
+            if (currentPosition == 0) {
+                numberOfTimesAtZero++
+            }
         }
         return numberOfTimesAtZero
     }
@@ -38,8 +39,7 @@ class Day01 {
                 currentPosition -= finalMovement
                 if (currentPosition < 0) {
                     currentPosition = 100 - (currentPosition * -1)
-                    if(currentPosition != 0 && originalPosition != 0)
-                    {
+                    if (currentPosition != 0 && originalPosition != 0) {
                         numberOfTimesPassedZero++
                     }
                 }
@@ -51,8 +51,7 @@ class Day01 {
                 currentPosition += finalMovement
                 if (currentPosition > 99) {
                     currentPosition = 0 + (currentPosition - 100)
-                    if(currentPosition != 0 && originalPosition != 0)
-                    {
+                    if (currentPosition != 0 && originalPosition != 0) {
                         numberOfTimesPassedZero++
                     }
                 }

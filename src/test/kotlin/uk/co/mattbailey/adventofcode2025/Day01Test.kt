@@ -4,19 +4,19 @@ import java.io.File
 import kotlin.test.Test
 
 class Day01Test {
-
-    private val exampleInput = listOf(
-        "L68",
-        "L30",
-        "R48",
-        "L5",
-        "R60",
-        "L55",
-        "L1",
-        "L99",
-        "R14",
-        "L82"
-    )
+    private val exampleInput =
+        listOf(
+            "L68",
+            "L30",
+            "R48",
+            "L5",
+            "R60",
+            "L55",
+            "L1",
+            "L99",
+            "R14",
+            "L82",
+        )
 
     @Test
     fun `Part 1 - Can solve provided example`() {
